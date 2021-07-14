@@ -1,8 +1,8 @@
-/* Fonts */
+/*------------------------- Fonts -------------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-/* Common Styles */
+/* -------------------------Common Styles---------------------------------------------------------------- */
 
 main {
     display: flex;
@@ -35,7 +35,7 @@ hr {
     margin-right: 80px;
 }
 
-/* Header Styles */
+/* ---------------------------------Header Styles--------------------------------------------------------- */
 
 .top-banner {
     width: 100%;
@@ -81,7 +81,17 @@ hr {
     margin-left: 142px;
 }
 
-/* Players Section Styles */
+.banner-heading h1:hover {
+    transform: rotate(360deg) scale(0.5);
+    transition: transform 2s ease-in-out;
+}
+
+.banner-image:hover {
+    transform: rotate(360deg);
+    transition: transform 4s ease-in-out;
+}
+
+/* ------------------------------------Players Section Styles-------------------------------------------- */
 
 .players, .scorers, .news-bunch {
     margin-top: 70px;
@@ -110,7 +120,7 @@ hr {
     padding-top: 15px;
 }
 
-/* Top Goalscorers Styles */
+/* -----------------------------------Top Goalscorers Styles------------------------------------------ */
 
 .goal-title {
     margin-top: 120px;
@@ -125,14 +135,14 @@ hr {
     font-size: 1.5em;
 }
 
-/* News Section Styles */
+/* -------------------------------------News Section Styles------------------------------------ */
 
 .news h3, p {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Footer Section */
+/* --------------------------------------Footer Section---------------------------------------- */
 
 footer {
     display: flex;
@@ -153,4 +163,36 @@ footer {
     margin-bottom: 63px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+}
+
+/* ------------------------------Media Queries for Mobile Devices-------------------------------- */
+
+@media only screen and (max-width:688px) {
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-heading {
+        margin-bottom: 30px;
+    }
+    .section-title {
+        margin: 0;
+    }
+    .banner-image img {
+        margin: 0px;
+        width: 329px;
+        height: 259px;
+    }
+    .players, .scorers, .news-bunch {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .football-logo img {
+        width: 300px;
+        height: 150px;
+    }
 }
